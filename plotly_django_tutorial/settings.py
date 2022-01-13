@@ -89,9 +89,9 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'udemy',
+        'NAME': 'forwardschool',
         'USER': 'postgres',
-        'PASSWORD': '123456',
+        'PASSWORD': 'C@t15Curtin',
         'HOST': 'localhost'
     }
 }
@@ -159,9 +159,9 @@ PLOTLY_COMPONENTS = [
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
-STATICFILES_LOCATION = 'static'
+STATICFILES_LOCATION = '/static/'
 STATIC_URL = '/static/'
-STATIC_ROOT = 'static'
+STATIC_ROOT = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'plotly_django_tutorial/static')
 ]
