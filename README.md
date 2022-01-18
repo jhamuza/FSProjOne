@@ -6,9 +6,7 @@
     1. Check if you have a virtual env ``virtualenv --version``
     2. (Not Installed) Dont see a version number? run ``sudo pip install virtualenv``
     3. (Installed) Make a folder within the highest file of the project ``mkdir ~/env``
-    4. run ``virtualenv ~/env/my_new_app``
-    5. cd into the bin folder ``cd ~/env/my_new_app/bin``
-    6. activate the env ``source activate``
+    4. run ``.\env\Scripts\activate``
 
 - ``pip install -r requirements.txt``
 
