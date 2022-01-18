@@ -1,15 +1,4 @@
-![Intro Banner](https://i.udemycdn.com/course/480x270/2597712_9552_2.jpg)
-
-# Django-Plotly-Dash
-
-Follow along with this Free Step by Step Tutorial Video:
-
-[Full Tutorial Video]()
-
-Learn More on Django, Plotly & Dash on my Full Course:
-
-[Full Udemy Course](https://www.udemy.com/course/plotly-dash/?referralCode=16FC11D8981E0863E557)
-
+# Forward School Applied Data Science Project 1
 
 ## How to Install
 
@@ -31,10 +20,6 @@ Learn More on Django, Plotly & Dash on my Full Course:
 
 - ``python manage.py runserver``
 
-## Finished Picture
-
-![Finished Project](https://i.imgur.com/EabKIjy.png)
-
 # Useful Links
 
 [django-plotly-dash](https://pypi.org/project/django-plotly-dash/)
@@ -46,8 +31,3 @@ Learn More on Django, Plotly & Dash on my Full Course:
 [Plotly](https://plot.ly/python/)
 
 [Dash Docs](https://dash.plot.ly/)
-
-### Still Have Questions?
-[cryptopotluck.com](https://www.cryptopotluck.com)
-
-[cryptopotluck Discord](https://discord.gg/rNc6xtP)
