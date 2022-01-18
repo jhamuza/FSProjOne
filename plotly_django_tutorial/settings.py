@@ -165,3 +165,8 @@ STATIC_ROOT = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'plotly_django_tutorial/static')
 ]
+
+# config/settings.py
+LOGIN_URL = '/accounts/login/'
+LOGOUT_URL = '/home/' # new
+LOGIN_REDIRECT_URL = '/home'

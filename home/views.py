@@ -1,24 +1,28 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from plotly.offline import plot
 import plotly.graph_objects as go
-# Create your views here.
+import pandas as pd
 
+# Create your views here3
+
+#@login_required(login_url='/accounts/login/')
 def home(request):
     def scatter():
-        x1 = [1,2,3,4]
-        y1 = [30, 35, 25, 45]
+        
+        df =  pd.read_csv(r"C:\Users\User\Documents\SideHustles\FSProjOne\ADS.csv")
 
-        trace = go.Scatter(
-            x=x1,
-            y = y1
-        )
-        layout = dict(
-            title='Simple Graph',
-            xaxis=dict(range=[min(x1), max(x1)]),
-            yaxis = dict(range=[min(y1), max(y1)])
+        data = [go.Histogram(x=df['Branch'],marker=dict(color='green'))] #histogram only needs one set of data
+
+        layout = go.Layout(
+        hovermode='closest',
+         xaxis = {'title':'Language Branch'},
+         yaxis = {'title': 'Number of Language Included'},
+        title = 'Language Branch vs Language Variation'
         )
 
-        fig = go.Figure(data=[trace], layout=layout)
+
+        fig = go.Figure(data=data,layout=layout)
         plot_div = plot(fig, output_type='div', include_plotlyjs=False)
         return plot_div
 
@@ -28,27 +32,3 @@ def home(request):
 
     return render(request, 'home/welcome.html', context)
 
-def test(request):
-    def scatter():
-        x1 = [1,2,3,4]
-        y1 = [30, 35, 25, 45]
-
-        trace = go.Scatter(
-            x=x1,
-            y = y1
-        )
-        layout = dict(
-            title='Simple Graph',
-            xaxis=dict(range=[min(x1), max(x1)]),
-            yaxis = dict(range=[min(y1), max(y1)])
-        )
-
-        fig = go.Figure(data=[trace], layout=layout)
-        plot_div = plot(fig, output_type='div', include_plotlyjs=False)
-        return plot_div
-
-    context ={
-        'plot2': scatter()
-    }
-
-    return render(request, 'home/welcome.html', context)

@@ -1,7 +1,8 @@
+
 {%  extends 'base.html' %}
 {% load static %}
 {% block content %}
-
+{% if user.is_authenticated %}
 
 <br />
 
@@ -11,4 +12,8 @@
 </div>    
 <!-- <br>   
     {{ plot1 | safe }} -->
+{% else %}
+    <p>You are not logged in</p>
+    <a href='{% url "login" %}'>Log in</a>
+{% endif %}    
 {% endblock %}
