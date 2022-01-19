@@ -167,6 +167,6 @@ STATICFILES_DIRS = [
 ]
 
 # config/settings.py
-LOGIN_URL = '/accounts/login/'
-LOGOUT_URL = '/home/' # new
-LOGIN_REDIRECT_URL = '/home'
+LOGIN_URL = 'dashboard'
+LOGOUT_URL = 'dashboard' # new
+LOGIN_REDIRECT_URL = 'dashboard'

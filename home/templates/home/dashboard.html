@@ -1,7 +1,7 @@
-
 {%  extends 'base.html' %}
-
+{% load static %}
 {% block content %}
+Hello, {{ user.username|default:'Guest' }}!
 <div style="width:600;height:800">
     <!-- this is graph 1 -->
     {{ plot1 | safe }}
