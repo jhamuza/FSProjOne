@@ -1,9 +1,11 @@
 from django.views.generic import TemplateView
-from django.contrib.auth.decorators import login_required
-from django.shortcuts import render
+from django.contrib.auth import login
+from django.shortcuts import redirect, render
 from plotly.offline import plot
 import plotly.graph_objects as go
 import pandas as pd
+from django.urls import reverse
+from home.forms import CustomUserCreationForm # Changed user to home, as we wanted this to import the CustomUserCreationForm from home
 
 # Create your views here3
 
@@ -11,6 +13,19 @@ import pandas as pd
 
 def dashboard(request):
     return render(request, "home/dashboard.html")
+
+def register(request):
+    if request.method == "GET":
+        return render(
+            request, "home/register.html",
+            {"form": CustomUserCreationForm}
+        )
+    elif request.method == "POST":
+        form = CustomUserCreationForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            login(request, user)
+            return redirect(reverse("home"))
 
 
 def home(request):

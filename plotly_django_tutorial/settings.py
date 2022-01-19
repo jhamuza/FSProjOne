@@ -169,4 +169,4 @@ STATICFILES_DIRS = [
 # config/settings.py
 LOGIN_URL = 'dashboard'
 LOGOUT_URL = 'dashboard' # new
-LOGIN_REDIRECT_URL = 'dashboard'
+LOGIN_REDIRECT_URL = '/'
