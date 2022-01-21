@@ -1,0 +1,96 @@
+Station Name,District,Main Basin,Sub River Basin,Last Updated,Current Water Level,Normal Threshold,Alert Threshold,Warning Threshold,Danger Threshold,Status
+Ulu Batang Kayan,Kuching,Batang Kayan,Btg. Kayan,21/01/2022 16:45,7.45,6.0,13.0,14.0,15.0,Normal
+Aman 5 Bridge,Kuching,Sungai Sarawak,Sg. Semadang,21/01/2022 09:45,31.54,31.2,37.4,37.58,38.0,Normal
+Sungai Pedid,Kuching,Sungai Sarawak,Sg. Spora,21/01/2022 16:45,14.39,14.25,20.53,20.71,21.13,Normal
+Kampung Git,Kuching,Sungai Sarawak,Sg. Sarawak Kiri,21/01/2022 16:45,5.41,4.55,12.1,12.6,13.1,Normal
+Buan Bidi,Kuching,Sungai Sarawak,Sg. Sarawak Kanan,21/01/2022 16:45,11.34,11.24,16.2,16.8,17.8,Normal
+Sungai Opar,Kuching,Sungai Sarawak,Sg. Opar,21/01/2022 16:45,11.65,12.0,15.83,16.01,16.43,Normal
+RTB Bau,Kuching,Sungai Sarawak,Sg. Sarawak Kanan,21/01/2022 16:45,10.19,10.0,12.46,12.58,12.86,Normal
+Bau Bridge,Kuching,Sungai Sarawak,Sg. Sarawak Kanan,21/01/2022 16:45,5.78,5.3,12.46,12.58,12.86,Normal
+Buso,Kuching,Sungai Sarawak,Sg. Sarawak Kanan,21/01/2022 16:45,2.06,1.8,8.0,10.2,10.7,Normal
+Siniawan,Kuching,Sungai Sarawak,Sg. Sarawak Kanan,21/01/2022 16:45,0.26,1.05,5.5,6.2,7.2,Normal
+Batu Kitang Telemetry,Kuching,Sungai Sarawak,Sg. Sarawak Kiri,21/01/2022 16:45,1.95,1.85,3.0,4.5,5.0,Normal
+Batu Kawa Bridge,Kuching,Sungai Sarawak,Sg. Sarawak,21/01/2022 16:45,-1.05,1.5,2.5,3.0,4.2,Normal
+Central Park,Kuching,Sungai Sarawak,Sg. Maong,21/01/2022 16:45,0.02,0.51,3.86,4.0,4.24,Normal
+Maong Tengah Kiri,Kuching,Sungai Sarawak,Sg. Maong,21/01/2022 16:45,-1.06,0.2,3.0,4.0,4.4,Normal
+Kuala Maong,Kuching,Sungai Sarawak,Sg. Maong,21/01/2022 16:45,-1.4,0.25,2.0,2.24,2.8,Normal
+Satok B,Kuching,Sungai Sarawak,Sg. Sibu,21/01/2022 16:45,-1.3,0.27,2.4,2.52,2.8,Normal
+Barrage,Kuching,Sungai Sarawak,Sg. Sarawak,21/01/2022 16:45,-1.34,0.8,2.8,2.92,3.2,Normal
+Sungai Tengah,Kuching,Sungai Sarawak,Sg. Tengah,21/01/2022 16:45,4.59,5.0,7.1,7.28,7.7,Normal
+Malihah,Kuching,Sungai Sarawak,Sg. Minjap,21/01/2022 16:45,3.82,3.42,6.8,7.1,7.4,Normal
+Kampung Rayu,Kuching,Sungai Sarawak,Sg. Rayu,21/01/2022 16:45,2.35,2.3,10.3,10.9,11.5,Normal
+Rampangi,Kuching,Sungai Sarawak,Sg. Santubong,21/01/2022 16:45,0.26,-0.75,2.1,3.1,3.4,Normal
+Sibu Laut,Kuching,Sungai Sarawak,Sg. Sibu,21/01/2022 16:45,-0.87,1.2,2.5,2.6,2.8,Normal
+Kampung Salak,Kuching,Sungai Sarawak,Btg. Salak,21/01/2022 16:45,-0.08,1.35,3.4,3.6,3.8,Normal
+Pulau Lakei,Kuching,Sungai Sarawak,Laut,21/01/2022 16:45,0.63,3.0,3.8,4.1,4.5,Normal
+Batu Gong,Serian,Batang Samarahan,Sg. Tuang,21/01/2022 16:45,3.63,2.41,4.56,5.9,6.5,Normal
+Krusen,Serian,Batang Sadong,Sg. Batang Kayan,21/01/2022 16:45,11.03,11.93,15.2,16.3,17.4,Normal
+Meringgu,Serian,Batang Sadong,Sg. Kedup,21/01/2022 16:45,12.37,11.92,15.0,16.0,16.5,Normal
+Serian,Serian,Batang Sadong,Sg. Batang Kayan,21/01/2022 16:45,5.01,4.49,8.3,8.51,9.0,Normal
+Mid Sungai Kuap,Samarahan  ,Sungai Sarawak,Sg. Kuap,21/01/2022 16:45,0.98,0.6,3.0,3.3,3.8,Normal
+Asajaya Water Intake,Samarahan  ,Batang Samarahan,Sg. Moyan,21/01/2022 16:30,2.73,1.03,2.6,3.2,3.8,Danger
+Sabal Kruin,Samarahan  ,Batang Sadong,Sg. Simunjan,21/01/2022 16:45,3.32,2.1,4.17,4.78,5.58,Normal
+Gedong,Samarahan  ,Batang Sadong,Btg. Kerang,21/01/2022 16:45,-0.4,3.1,4.82,5.9,6.3,Normal
+Nanga Delok,Sri Aman,Batang Lupar,Btg. Ai,21/01/2022 16:45,13.05,22.0,23.25,23.75,24.05,Normal
+Bau Sungai,Sri Aman,Batang Lupar,Btg. Sekerang,21/01/2022 16:45,13.19,13.0,16.0,17.0,20.0,Normal
+Enteban 2,Sri Aman,Batang Lupar,Btg. Sekerang,21/01/2022 16:45,2.44,15.0,20.0,22.0,23.0,Normal
+Engkilili JKR Wharf,Sri Aman,Batang Lupar,Btg. Lupar,21/01/2022 16:45,4.74,7.11,8.8,9.43,9.79,Normal
+Sri Aman Telemetry,Sri Aman,Batang Lupar,Btg. Lupar,21/01/2022 16:45,1.3,3.0,4.9,5.2,5.5,Normal
+Pantu,Sri Aman,Batang Lupar,Btg. Seterap,21/01/2022 16:45,3.08,1.8,4.9,5.58,6.3,Normal
+Nanga Samu,Betong,Batang Saribas,Btg. Paku,21/01/2022 16:45,2.54,1.45,7.49,8.09,9.79,Normal
+Kaki Wong,Betong,Batang Krian,Btg. Krian,21/01/2022 16:45,2.0,3.23,6.06,6.66,7.26,Normal
+Roban,Betong,Batang Krian,Sg. Sebelak,21/01/2022 16:45,1.81,3.85,4.6,5.0,5.2,Normal
+Telok Ngelengkung,Kapit,Batang Rajang,Btg. Baleh,21/01/2022 16:15,6.6,4.6,11.3,12.3,13.5,Normal
+Sambop B,Kapit,Batang Rajang,Btg. Belaga,21/01/2022 16:45,7.7,6.0,15.86,16.85,19.12,Normal
+Belaga,Kapit,Batang Rajang,Btg. Belaga,21/01/2022 16:45,42.71,41.06,47.3,50.9,52.0,Normal
+Punan Bah B,Kapit,Batang Rajang,Btg. Belaga,21/01/2022 16:45,6.25,5.37,9.0,10.0,11.0,Normal
+Nanga Merit,Kapit,Batang Rajang,Btg. Belaga,21/01/2022 16:30,18.67,18.0,20.0,23.0,24.0,Normal
+Nanga Entawau,Kapit,Batang Rajang,Btg. Baleh,21/01/2022 16:45,6.56,4.6,11.3,12.3,12.8,Normal
+Teluk Buing,Kapit,Batang Rajang,Btg. Baleh,21/01/2022 16:45,5.52,1.98,10.0,11.0,12.0,Normal
+Kapit Town,Kapit,Batang Rajang,Btg. Rajang,21/01/2022 16:45,10.57,6.25,11.9,14.55,15.3,Normal
+Nanga Sebatu,Kapit,Batang Rajang,Btg. Rajang,21/01/2022 16:45,9.28,5.0,11.0,14.0,15.0,Normal
+Nanga Mukeh B,Kapit,Batang Rajang,Sg. Katibas,21/01/2022 16:45,4.3,3.05,14.0,14.5,15.0,Normal
+Song B,Kapit,Batang Rajang,Sg. Katibas,21/01/2022 16:45,8.43,5.59,10.59,11.59,12.59,Normal
+Nanga Kabah,Sibu,Batang Rajang,Btg. Rajang,21/01/2022 16:45,3.47,4.5,6.29,7.04,7.79,Normal
+Kanowit Town,Sibu,Batang Rajang,Btg. Rajang,21/01/2022 16:45,2.98,3.4,4.59,5.09,5.59,Normal
+Durin Bazaar,Sibu,Batang Rajang,Btg. Rajang,21/01/2022 16:30,2.31,2.5,3.5,4.0,4.5,Normal
+Stabau,Sibu,Batang Rajang,Btg. Rajang,21/01/2022 16:45,1.99,2.4,3.5,3.74,4.3,Normal
+Jabatan Laut,Sibu,Batang Rajang,Btg. Igan,21/01/2022 16:45,0.5,1.3,2.3,2.6,2.9,Normal
+Rantau Panjang B,Sibu,Batang Rajang,Btg. Igan,21/01/2022 16:45,-0.26,1.5,2.0,2.18,2.6,Normal
+Sungai Teku,Sibu,Batang Rajang,Sg. Merah,21/01/2022 16:45,1.3,1.6,2.6,2.78,3.2,Normal
+Ulu Sungai Merah,Sibu,Batang Rajang,Sg. Merah,21/01/2022 16:45,0.63,1.6,2.2,2.29,2.5,Normal
+Sungai Merah,Sibu,Batang Rajang,Sg. Merah,21/01/2022 16:45,0.38,1.11,2.5,2.8,3.0,Normal
+Sarawak Maritime,Sibu,Batang Rajang,Btg. Rajang,21/01/2022 16:45,1.24,2.3,2.8,2.95,3.3,Normal
+Express Terminal,Sibu,Batang Rajang,Btg. Rajang,21/01/2022 16:45,0.26,1.8,2.5,2.62,2.9,Normal
+Sungai Bidut,Sibu,Batang Rajang,Btg. Rajang,21/01/2022 16:45,0.66,1.8,2.8,2.98,3.4,Normal
+Lebaan,Sibu,Batang Rajang,Btg. Lebaan,21/01/2022 16:45,0.56,2.6,3.4,4.15,4.9,Normal
+Renan Kemiding,Sibu,Batang Rajang,Sg. Kanowit,21/01/2022 16:45,4.91,2.91,6.21,7.21,7.71,Normal
+Nanga Ayam,Sarikei,Batang Rajang,Sg. Kanowit,21/01/2022 16:45,13.43,8.45,18.48,18.95,19.45,Normal
+Ambas,Sarikei,Batang Rajang,Sg. Sarikei,21/01/2022 16:45,1.41,1.24,6.0,6.5,7.0,Normal
+Bintangor,Sarikei,Batang Rajang,Btg. Rajang,21/01/2022 16:45,-0.04,2.4,2.48,2.6,3.3,Normal
+Sarikei DID,Sarikei,Batang Rajang,Btg. Rajang,21/01/2022 16:45,0.66,0.0,2.7,3.0,3.3,Normal
+Matu,Mukah,Batang Rajang,Btg. Matu,21/01/2022 16:45,1.59,0.84,1.74,2.64,3.34,Normal
+Igan,Mukah,Batang Rajang,Btg. Igan,21/01/2022 17:00,2.02,1.3,3.6,3.9,4.2,Normal
+Mukah JKR,Mukah,Batang Mukah,Btg. Mukah,21/01/2022 16:45,0.45,0.13,1.2,1.5,1.7,Normal
+Muput,Bintulu,Batang Tatau,Sg. Anap,21/01/2022 16:45,2.34,3.0,6.5,7.5,8.5,Normal
+Rumah Abua,Bintulu,Batang Tatau,Btg. Tatau,21/01/2022 16:45,6.42,5.0,9.31,10.4,11.31,Normal
+Tatau Town,Bintulu,Batang Tatau,Btg. Tatau,21/01/2022 17:00,0.41,1.25,2.25,2.95,3.3,Normal
+Kuala Tatau,Bintulu,Batang Tatau,Btg. Tatau,21/01/2022 17:00,0.0,0.5,0.75,1.05,1.35,Normal
+Bintulu Kastam Wharf,Bintulu,Batang Kemena,Btg. Kemena,21/01/2022 16:30,0.47,0.5,1.0,1.6,2.1,Normal
+Sebauh,Bintulu,Batang Kemena,Btg. Kemena,21/01/2022 16:45,0.91,0.22,1.27,1.57,1.97,Normal
+Sungai Sibiu,Bintulu,Batang Kemena,Sg. Sibiu,21/01/2022 16:45,2.22,0.07,3.3,4.3,5.3,Normal
+Kuala Tutong,Miri,Batang Suai,Btg. Suai,21/01/2022 13:45,4.66,1.2,4.0,4.5,5.0,Danger
+Batu Niah Bazaar,Miri,Sungai Miri,Sg. Niah,21/01/2022 16:45,1.83,0.86,2.62,4.72,5.22,Normal
+Bekenu,Miri,Sungai Sibuti,Sg. Sibuti,21/01/2022 16:45,0.06,0.42,1.21,1.51,2.02,Normal
+Miri DID,Miri,Sungai Miri,Sg. Miri,21/01/2022 16:45,1.22,2.0,2.5,2.7,3.0,Normal
+Long Panai,Miri,Batang Baram,Sg. Tutoh,21/01/2022 14:00,5.83,4.0,6.5,7.5,8.0,Normal
+Lio Matu,Miri,Batang Baram,Btg. Baram,21/01/2022 16:45,3.72,0.3,7.0,8.0,9.0,Normal
+Long Lama,Miri,Batang Baram,Btg. Baram,21/01/2022 16:45,12.6,7.65,14.15,15.15,15.45,Normal
+Benawa,Miri,Batang Baram,Btg. Baram,21/01/2022 16:45,6.36,3.5,6.0,7.0,8.0,Danger
+Long Jegan,Miri,Batang Baram,Sg. Tinjar,21/01/2022 16:45,12.16,4.5,10.5,11.5,12.0,Danger
+Long Teru,Miri,Batang Baram,Sg. Tinjar,21/01/2022 16:45,8.22,3.0,6.0,7.0,8.0,Danger
+Marudi,Miri,Batang Baram,Btg. Baram,21/01/2022 16:45,2.88,0.0,2.79,3.09,3.25,Danger
+Beluru,Miri,Batang Baram,Sg. Bakong,21/01/2022 16:45,3.21,2.0,4.3,5.1,5.5,Normal
+Nanga Insungai,Limbang,Sungai Limbang,Sg. Mendalam,21/01/2022 16:45,1.68,1.4,7.0,7.5,8.0,Normal
+Limbang DID,Limbang,Sungai Limbang,Sg. Limbang,21/01/2022 14:15,0.15,0.34,1.1,1.2,1.3,Normal
+Long Tengoa,Limbang,Batang Trusan,Btg. Trusan,21/01/2022 16:45,2.97,2.5,4.8,5.3,6.0,Normal
