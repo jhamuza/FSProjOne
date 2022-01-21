@@ -76,7 +76,6 @@ def home(request):
 
     return render(request, 'home/dashboard.html', context)
 
-@login_required(login_url='/accounts/login/')
 def infobanjir(request):
     def uno():
         
