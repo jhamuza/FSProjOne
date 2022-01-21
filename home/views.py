@@ -4,6 +4,8 @@ from django.contrib.auth import login
 from django.shortcuts import redirect, render
 from plotly.offline import plot
 import plotly.graph_objects as go
+import plotly.express as px
+import plotly
 import pandas as pd
 from django.urls import reverse
 from home.forms import CustomUserCreationForm # Changed user to home, as we wanted this to import the CustomUserCreationForm from home
@@ -31,23 +33,39 @@ def register(request):
             login(request, user)
             return redirect(reverse("home"))
 
+def irrigation(request):
+    return render(request, "home/irrigation.html")
+
+def infobanjir(request):
+    return render(request, "home/infobanjir.html")
+
 #@login_required(login_url='/accounts/login/')
 def home(request):
     def scatter():
         
-        df =  pd.read_csv(r"C:\Users\User\Documents\SideHustles\FSProjOne\ADS.csv")
+        DID_December =  pd.read_csv(r"C:\Users\User\Documents\SideHustles\FSProjOne\XJ_JPNB\DID_December.csv")
 
-        data = [go.Histogram(x=df['Branch'],marker=dict(color='green'))] #histogram only needs one set of data
+        colors = plotly.colors.qualitative.Prism
 
-        layout = go.Layout(
-        hovermode='closest',
-         xaxis = {'title':'Language Branch'},
-         yaxis = {'title': 'Number of Language Included'},
-        title = 'Language Branch vs Language Variation'
-        )
+        fig = px.bar(DID_December, DID_December['Date'], y=DID_December['Average'],
+                    color=DID_December['Average'], barmode='stack',
+                    text=DID_December['Average'].round(decimals = 3).astype(str) + 'm',  # Add m unit
+                    color_discrete_sequence=colors)
 
+        fig.update_layout(title = {'text': "Average Water Level of Flood Area by Dates",
+                                'x':0.5, 'xanchor': 'center'},
+                        title_font_size=30,
+                        legend=dict(yanchor="bottom", y=0.0, 
+                                    xanchor="right", x=1.2),
+                        legend_font_size=16, 
+                        xaxis_title = 'Date', 
+                        yaxis_title ='Average Water Level',
+                        xaxis_tickangle=-45,
+                        width = 1920, height = 600)
 
-        fig = go.Figure(data=data,layout=layout)
+        # Don't forget to remove from update_traces
+        fig.update_traces(textfont_size=12)
+        
         plot_div = plot(fig, output_type='div', include_plotlyjs=False)
         return plot_div
 
@@ -68,38 +86,13 @@ def home(request):
         fig = go.Figure(data=data,layout=layout)
         plot_div = plot(fig, output_type='div', include_plotlyjs=False)
         return plot_div
-
+    
     context ={
         'plot1': scatter(),
         'plot2': saza()
     }
 
     return render(request, 'home/dashboard.html', context)
-
-def infobanjir(request):
-    def uno():
-        
-        df =  pd.read_csv(r"C:\Users\User\Documents\SideHustles\FSProjOne\ADS.csv")
-
-        data = [go.Histogram(x=df['Branch'],marker=dict(color='green'))] #histogram only needs one set of data
-
-        layout = go.Layout(
-        hovermode='closest',
-         xaxis = {'title':'Language Branch'},
-         yaxis = {'title': 'Number of Language Included'},
-        title = 'Language Branch vs Language Variation'
-        )
-
-
-        fig = go.Figure(data=data,layout=layout)
-        plot_div = plot(fig, output_type='div', include_plotlyjs=False)
-        return plot_div
-
-    context ={
-        'plot1': uno()
-    }
-
-    return render(request, 'home/infobanjir.html', context)    
 
 class page2PageView(TemplateView): #was planning to add another page, this could be handy once i wanted to designate the login page
     template_name ="home/Page2.html"

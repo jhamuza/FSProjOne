@@ -1,0 +1,228 @@
+{%  extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% if user.is_authenticated %}
+<!-- CSS Code: Place this code in the document's head (between the <head> -- </head> tags) -->
+<style>
+    table.customTable {
+      width: 100%;
+      background-color: #FFFFFF;
+      border-collapse: collapse;
+      border-width: 2px;
+      border-color: #496EDB;
+      border-style: solid;
+      color: #000000;
+    }
+    
+    table.customTable td, table.customTable th {
+      border-width: 2px;
+      border-color: #496EDB;
+      border-style: solid;
+      padding: 5px;
+      font-size: larger;
+    }
+    
+    table.customTable thead {
+      background-color: #496EDB;
+      color: white;
+    }
+    </style>
+    
+    <!-- HTML Code: Place this code in the document's body (between the <body> tags) where the table should appear -->
+    <table class="customTable">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>District</th>
+          <th>Area</th>
+          <th>Min. Water Level</th>
+          <th>Max. Water Level</th>
+          <th>Average</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="row1">
+            <td class="column0 style0 s">04/12/2021</td>
+            <td class="column1 style0 s">&nbsp;Kuching</td>
+            <td class="column2 style0 s">Pekan Lundu</td>
+            <td class="column3 style0 n">0.05</td>
+            <td class="column4 style0 n">0.1</td>
+            <td class="column5 style0 n">0.075</td>
+          </tr>
+          <tr class="row2">
+            <td class="column0 style0 s">05/12/2021</td>
+            <td class="column1 style0 s">&nbsp;Betong</td>
+            <td class="column2 style0 s">Empayang</td>
+            <td class="column3 style0 n">0.3</td>
+            <td class="column4 style0 n">0.5</td>
+            <td class="column5 style0 n">0.4</td>
+          </tr>
+          <tr class="row3">
+            <td class="column0 style0 s">05/12/2021</td>
+            <td class="column1 style0 s">&nbsp;Kuching</td>
+            <td class="column2 style0 s">Pekan Lundu</td>
+            <td class="column3 style0 n">0.05</td>
+            <td class="column4 style0 n">0.3</td>
+            <td class="column5 style0 n">0.175</td>
+          </tr>
+          <tr class="row4">
+            <td class="column0 style0 s">05/12/2021</td>
+            <td class="column1 style0 s">Kuching</td>
+            <td class="column2 style0 s"> Jalan Sultan Tengah Off to Santubong</td>
+            <td class="column3 style0 n">0.3</td>
+            <td class="column4 style0 n">0.5</td>
+            <td class="column5 style0 n">0.4</td>
+          </tr>
+          <tr class="row5">
+            <td class="column0 style0 s">05/12/2021</td>
+            <td class="column1 style0 s">Kuching</td>
+            <td class="column2 style0 s"> Kampung Buntal Lot</td>
+            <td class="column3 style0 n">0.3</td>
+            <td class="column4 style0 n">0.6</td>
+            <td class="column5 style0 n">0.45</td>
+          </tr>
+          <tr class="row6">
+            <td class="column0 style0 s">05/12/2021</td>
+            <td class="column1 style0 s">Kuching</td>
+            <td class="column2 style0 s"> Kampung Sungai Batu</td>
+            <td class="column3 style0 n">0.3</td>
+            <td class="column4 style0 n">0.6</td>
+            <td class="column5 style0 n">0.45</td>
+          </tr>
+          <tr class="row7">
+            <td class="column0 style0 s">05/12/2021</td>
+            <td class="column1 style0 s">Sarikei  </td>
+            <td class="column2 style0 s"> Lebuh Tebingan Nyelong</td>
+            <td class="column3 style0 n">0.22</td>
+            <td class="column4 style0 n">0.22</td>
+            <td class="column5 style0 n">0.22</td>
+          </tr>
+          <tr class="row8">
+            <td class="column0 style0 s">05/12/2021</td>
+            <td class="column1 style0 s">Betong</td>
+            <td class="column2 style0 s"> Kampung Spaoh</td>
+            <td class="column3 style0 n">0.1</td>
+            <td class="column4 style0 n">0.15</td>
+            <td class="column5 style0 n">0.125</td>
+          </tr>
+          <tr class="row9">
+            <td class="column0 style0 s">06/12/2021</td>
+            <td class="column1 style0 s">Kuching</td>
+            <td class="column2 style0 s"> Tabuan Dayak</td>
+            <td class="column3 style0 n">0.1</td>
+            <td class="column4 style0 n">0.2</td>
+            <td class="column5 style0 n">0.15</td>
+          </tr>
+          <tr class="row10">
+            <td class="column0 style0 s">06/12/2021</td>
+            <td class="column1 style0 s">  Kapit</td>
+            <td class="column2 style0 s">Kampung Lebu' Kulit Sungai Asap</td>
+            <td class="column3 style0 n">0.3</td>
+            <td class="column4 style0 n">1</td>
+            <td class="column5 style0 n">0.65</td>
+          </tr>
+          <tr class="row11">
+            <td class="column0 style0 s">06/12/2021</td>
+            <td class="column1 style0 s"> Kuching</td>
+            <td class="column2 style0 s">Kampung Semariang Baru</td>
+            <td class="column3 style0 n">0.3</td>
+            <td class="column4 style0 n">0.5</td>
+            <td class="column5 style0 n">0.4</td>
+          </tr>
+          <tr class="row12">
+            <td class="column0 style0 s">06/12/2021</td>
+            <td class="column1 style0 s">Kuching</td>
+            <td class="column2 style0 s">Kampung Bako Ulu</td>
+            <td class="column3 style0 n">0.4</td>
+            <td class="column4 style0 n">0.6</td>
+            <td class="column5 style0 n">0.5</td>
+          </tr>
+          <tr class="row13">
+            <td class="column0 style0 s">06/12/2021</td>
+            <td class="column1 style0 s">Kuching</td>
+            <td class="column2 style0 s"> Kampung Telaga Air</td>
+            <td class="column3 style0 n">0.5</td>
+            <td class="column4 style0 n">0.9</td>
+            <td class="column5 style0 n">0.7</td>
+          </tr>
+          <tr class="row14">
+            <td class="column0 style0 s">06/12/2021</td>
+            <td class="column1 style0 s">Sarikei</td>
+            <td class="column2 style0 s">Leboh Tebingan Nyelong </td>
+            <td class="column3 style0 n">0.28</td>
+            <td class="column4 style0 n">0.28</td>
+            <td class="column5 style0 n">0.28</td>
+          </tr>
+          <tr class="row15">
+            <td class="column0 style0 s">06/12/2021</td>
+            <td class="column1 style0 s">Mukah</td>
+            <td class="column2 style0 s">Kampung Tanjong Pedada </td>
+            <td class="column3 style0 n">0.2</td>
+            <td class="column4 style0 n">0.5</td>
+            <td class="column5 style0 n">0.35</td>
+          </tr>
+          <tr class="row16">
+            <td class="column0 style0 s">09/12/2021</td>
+            <td class="column1 style0 s">Sibu</td>
+            <td class="column2 style0 s">Lorong Bahagia 9B</td>
+            <td class="column3 style0 n">0.15</td>
+            <td class="column4 style0 n">0.15</td>
+            <td class="column5 style0 n">0.15</td>
+          </tr>
+          <tr class="row17">
+            <td class="column0 style0 s">11/12/2021</td>
+            <td class="column1 style0 s">Sibu</td>
+            <td class="column2 style0 s"> Lorong Bahagian 9B</td>
+            <td class="column3 style0 n">0.3</td>
+            <td class="column4 style0 n">0.3</td>
+            <td class="column5 style0 n">0.3</td>
+          </tr>
+          <tr class="row18">
+            <td class="column0 style0 s">13/12/2021</td>
+            <td class="column1 style0 s">Betong</td>
+            <td class="column2 style0 s">RH Pelandok </td>
+            <td class="column3 style0 n">0.3</td>
+            <td class="column4 style0 n">0.9</td>
+            <td class="column5 style0 n">0.6</td>
+          </tr>
+          <tr class="row19">
+            <td class="column0 style0 s">17/12/2021</td>
+            <td class="column1 style0 s">&nbsp;Sibu  </td>
+            <td class="column2 style0 s">SK Sungai Buloh</td>
+            <td class="column3 style0 n">0.36</td>
+            <td class="column4 style0 n">0.7</td>
+            <td class="column5 style0 n">0.53</td>
+          </tr>
+          <tr class="row20">
+            <td class="column0 style0 s">19/12/2021</td>
+            <td class="column1 style0 s">  Sibu</td>
+            <td class="column2 style0 s">Jalan ke Tabalong Nanga Tamin</td>
+            <td class="column3 style0 n">0.3</td>
+            <td class="column4 style0 n">0.9</td>
+            <td class="column5 style0 n">0.6</td>
+          </tr>
+          <tr class="row21">
+            <td class="column0 style0 s">20/12/2021</td>
+            <td class="column1 style0 s"> Sibu</td>
+            <td class="column2 style0 s">Lorong Oya Lama (Ing San Road)</td>
+            <td class="column3 style0 n">0.15</td>
+            <td class="column4 style0 n">0.3</td>
+            <td class="column5 style0 n">0.225</td>
+          </tr>
+          <tr class="row22">
+            <td class="column0 style0 s">26/12/2021</td>
+            <td class="column1 style0 s"> Serian</td>
+            <td class="column2 style0 s">Kampung Hulu</td>
+            <td class="column3 style0 n">0.2</td>
+            <td class="column4 style0 n">0.5</td>
+            <td class="column5 style0 n">0.35</td>
+          </tr>
+      </tbody>
+    </table>
+    <!-- Generated at CSSPortal.com -->
+    
+{% else %}
+<h1>Please login!</h1>
+{% endif %}
+{% endblock %}

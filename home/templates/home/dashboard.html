@@ -1,9 +1,9 @@
 {%  extends 'base.html' %}
 {% load static %}
 {% block content %}
-<h3>Welcome, {{ user.username|default:'Guest' }}!</h3>
+<strong><h2 style="color:#496EDB"> Welcome, {{ user.username|default:'Guest' }}!</h2></strong>
 {% if user.is_authenticated %}
-<div style="width:600;height:800">
+<div>
     <!-- this is graph 1 -->
     {{ plot1 | safe }}
 </div>   
@@ -12,7 +12,7 @@
 <br>
 <div style="width:600;height:800">
     <!-- this is graph 2 -->
-    {{ plot2 | safe }} 
+    <!-- {{ plot2 | safe }}  -->
 </div>
 {% else %}
 <h1>Please login!</h1>

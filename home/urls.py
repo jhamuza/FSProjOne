@@ -3,7 +3,7 @@ from cgi import test
 from django.contrib import admin
 from . import views
 from django.urls import path,include, re_path
-from home.views import dashboard, register, test
+from home.views import dashboard, register
 #from django.views.generic.base import TemplateView # new
 
 
@@ -15,6 +15,7 @@ urlpatterns = [
     re_path(r"^register/", register, name="register"), #changed from re_path to this
     #re_path(r"^dashboard/", dashboard, name="dashboard"),
     #path('Page2/', page2PageView.as_view(), name="Page2"),
+    path('irrigation/', views.irrigation, name="irrigation"),
     path('infobanjir/', views.infobanjir, name='infobanjir'), #Connecting the path views to the page, in this case, page2
     re_path(r"^test/", test, name="test"), #changed from re_path to this
 ]
