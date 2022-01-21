@@ -2,8 +2,7 @@
 {% load static %}
 {% block content %}
 <h3>Welcome, {{ user.username|default:'Guest' }}!</h3>
-
-
+{% if user.is_authenticated %}
 <div style="width:600;height:800">
     <!-- this is graph 1 -->
     {{ plot1 | safe }}
@@ -15,4 +14,7 @@
     <!-- this is graph 2 -->
     {{ plot2 | safe }} 
 </div>
+{% else %}
+<h1>Please login!</h1>
+{% endif %}
 {% endblock %}

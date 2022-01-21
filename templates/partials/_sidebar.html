@@ -16,7 +16,7 @@
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
-
+      {% if user.is_authenticated %}
       <!-- Divider -->
       <hr class="sidebar-divider">
 
@@ -107,5 +107,13 @@
       <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
+      {% else %}
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
 
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+      {% endif %}
     </ul>

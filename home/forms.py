@@ -1,3 +1,5 @@
+#How user creation is done
+
 from django.contrib.auth.forms import UserCreationForm
 
 class CustomUserCreationForm(UserCreationForm):

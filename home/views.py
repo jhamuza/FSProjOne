@@ -1,4 +1,5 @@
 from django.views.generic import TemplateView
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login
 from django.shortcuts import redirect, render
 from plotly.offline import plot
@@ -14,6 +15,9 @@ from home.forms import CustomUserCreationForm # Changed user to home, as we want
 def dashboard(request):
     return render(request, "home/dashboard.html")
 
+def test(request):
+    return render(request, "home/test.html")
+
 def register(request):
     if request.method == "GET":
         return render(
@@ -27,7 +31,7 @@ def register(request):
             login(request, user)
             return redirect(reverse("home"))
 
-
+#@login_required(login_url='/accounts/login/')
 def home(request):
     def scatter():
         
