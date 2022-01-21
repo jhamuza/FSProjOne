@@ -1,5 +1,6 @@
 <!-- test -->
 {% block content %}
+<h3>You have been logged out successfully!</h3>
 <h2>Login</h2>
 
 <form method="post">
@@ -10,5 +11,4 @@
 
 <a href="/">Back to dashboard</a>
 <a href="{% url 'password_reset' %}">Reset password</a>
-<a href="{% url 'register' %}">Register</a>
 {% endblock %}
