@@ -30,6 +30,9 @@ This is followed by a discussion centred on the aforementioned graphs and how th
 
 ## Web Scraping, Data Cleaning and Visualization
 
+- Scrap daily data from Public Info Banjir for at least 3 days to better visualise the pattern of the water level in Sarawak River.
+- Scrap at least 3 months of data from Department of Irrigation & Drainage Sarawak to anlyse the pattern of flood events. 
+
 ## Django Development
 
 - To include better UI/UX experience for users when accessing the dashboard, especially in terms of the onboarding by utilizing more CSS / SCSS while also making the whole platform more responsive to both mobile and desktop users
