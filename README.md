@@ -26,6 +26,12 @@ In our first Mini Project for Applied Data Science with Forward School, we analy
 
 This is followed by a discussion centred on the aforementioned graphs and how the approaching rainy season will effect certain areas of Sarawak, as well as how the data may be used to assist both the government and the general population in mitigating the flood's impact.
 
+# Challenges
+
+- Data is not centralised and made available to the general public
+- The transition from dealing with cleansed data to scraping your own data from scratch was a huge learning curve
+- Implementing Django to visualise and make the project public was first difficult, but as the project progressed, it became manageable
+
 # Future Works
 
 ## Web Scraping, Data Cleaning and Visualization
