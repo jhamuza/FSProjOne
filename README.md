@@ -26,6 +26,26 @@ In our first Mini Project for Applied Data Science with Forward School, we analy
 
 This is followed by a discussion centred on the aforementioned graphs and how the approaching rainy season will effect certain areas of Sarawak, as well as how the data may be used to assist both the government and the general population in mitigating the flood's impact.
 
+# Challenges
+
+- Data is not centralised and made available to the general public
+- The transition from dealing with cleansed data to scraping your own data from scratch was a huge learning curve
+- Implementing Django to visualise and make the project public was first difficult, but as the project progressed, it became manageable
+
+# Future Works
+
+## Web Scraping, Data Cleaning and Visualization
+
+- Scrap daily data from Public Info Banjir for at least 3 days to better visualise the pattern of the water level in Sarawak River.
+- Scrap at least 3 months of data from Department of Irrigation & Drainage Sarawak to anlyse the pattern of flood events. 
+
+## Django Development
+
+- To include better UI/UX experience for users when accessing the dashboard, especially in terms of the onboarding by utilizing more CSS / SCSS while also making the whole platform more responsive to both mobile and desktop users
+- Pushing the project to an instance, either on Heroku or Digital Ocean
+- To add query function, where users could actually search for specific terms and divisions of interest
+
+
 # References
 
 [Department of Irrigation and Drainage Sarawak](https://did.sarawak.gov.my/page-0-0-1517-Recorded-Flood-Event-in-Sarawak-P18.html)
