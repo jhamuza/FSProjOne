@@ -32,6 +32,10 @@ This is followed by a discussion centred on the aforementioned graphs and how th
 
 ## Django Development
 
+- To include better UI/UX experience for users when accessing the dashboard, especially in terms of the onboarding by utilizing more CSS / SCSS while also making the whole platform more responsive to both mobile and desktop users
+- Pushing the project to an instance, either on Heroku or Digital Ocean
+- To add query function, where users could actually search for specific terms and divisions of interest
+
 
 # References
 
