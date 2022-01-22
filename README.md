@@ -26,6 +26,13 @@ In our first Mini Project for Applied Data Science with Forward School, we analy
 
 This is followed by a discussion centred on the aforementioned graphs and how the approaching rainy season will effect certain areas of Sarawak, as well as how the data may be used to assist both the government and the general population in mitigating the flood's impact.
 
+# Future Works
+
+## Web Scraping, Data Cleaning and Visualization
+
+## Django Development
+
+
 # References
 
 [Department of Irrigation and Drainage Sarawak](https://did.sarawak.gov.my/page-0-0-1517-Recorded-Flood-Event-in-Sarawak-P18.html)
