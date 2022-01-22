@@ -61,7 +61,7 @@ def home(request):
                         xaxis_title = 'Date', 
                         yaxis_title ='Average Water Level',
                         xaxis_tickangle=-45,
-                        width = 1920, height = 600)
+                        width = 1080, height = 600)
 
         # Don't forget to remove from update_traces
         fig.update_traces(textfont_size=12)

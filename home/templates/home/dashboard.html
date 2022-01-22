@@ -1,12 +1,16 @@
 {%  extends 'base.html' %}
 {% load static %}
 {% block content %}
-<strong><h2 style="color:#496EDB"> Welcome, {{ user.username|default:'Guest' }}!</h2></strong>
+<strong><h2 style="color:#496EDB"> Welcome, {{ user.username|default:'visitor' }}!</h2></strong>
 {% if user.is_authenticated %}
 <div>
     <!-- this is graph 1 -->
     {{ plot1 | safe }}
-</div>   
+</div>  
+<div>
+    <!-- this is graph 1 -->
+    {{ plot1 | safe }}
+</div>    
 <h2>Assumptions</h2>
 <p>So assuming  n</p>
 <br>
@@ -15,9 +19,47 @@
     <!-- {{ plot2 | safe }}  -->
 </div>
 {% else %}
-<h1>Please login!</h1>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.responsive {
+  width: 100%;
+  height: auto;
+}
+</style>
+<h2>Responsive Images</h2>
 
+<p>If you want the image to scale both up and down on responsiveness, set the CSS width property to 100% and height to auto.</p>
+<p>Resize the browser window to see the effect.</p>
+
+<img src="https://i.ibb.co/Gv6Yv1S/ir-one-m-Pg-TKDHq-Dj-A0-unsplash-1.jpg" alt="Nature" class="responsive" width="600" height="400">
+
+</body>
 <p style="font-size: x-large; color: black;">Floods are identified as the <b>most devastating hazards in the world</b> (Prăvălie and Costache, 2013; Mishra and Sinha, 2020; Sarkar and Mondal, 2020). Flood often causes severe loss of human lives and socio-economic damage (Hirabayashi et al., 2013; Costache, 2019). </p>
 <p style="font-size: x-large; color: black">According to a news article reported on 23 December 2021 by The Borneo Post, the public in Sarawak have been advised to make the necessary preparations for possible floods and landslides following worst flood events in decades caused by three days of torrential rain happened in Klang Valley and Pahang. According to MetMalaysia’s infographic on 22 December 2021, a monsoon surge is expected to occur from 27 to 29 December 2021, with continuous rain in the western part of Sarawak and eastern Sabah during the period.</p>
+<p style="font-size: x-large; color: black">In our first Mini Project for Applied Data Science with Forward School, we analyzed several data provided by <b>Public Info Banjir</b> and <b>Department of Irrigation and Drainage</b> on the occurence of floods and its average height in Sarawak, as well as to share the processes involved during the scraping of data.</p>
+<p style="font-size: x-large; color: black">This is followed by a discussion revolving around the the aforementioned graphs, and how the upcoming rainy season will affect certain region of Sarawak, and how the data could be used to assist both the government and the public to help mitigate the impact of the flood.</p>
+<!-- Divider -->
+<hr class="sidebar-divider d-none d-md-block">
+<p style="font-size: x-large; color: black">To find out more about the project, please login or register your account below:</p>
+
+<input
+    type="button"
+    class="btn btn-info"
+    value="Login"
+    onclick="location.href='{% url 'login' %}';"
+>
+<input
+    type="button"
+    class="btn btn-info"
+    value="Register Now"
+    onclick="location.href='{% url 'register' %}';"
+>
+<input
+    type="button"
+    class="btn btn-info"
+    value="Reset Password"
+    onclick="location.href='{% url 'password_reset' %}';"
+>
+
 {% endif %}
 {% endblock %}

@@ -4,6 +4,7 @@ from django.contrib import admin
 from . import views
 from django.urls import path,include, re_path
 from home.views import dashboard, register
+from django.contrib.staticfiles.storage import staticfiles_storage
 #from django.views.generic.base import TemplateView # new
 
 
@@ -18,4 +19,5 @@ urlpatterns = [
     path('irrigation/', views.irrigation, name="irrigation"),
     path('infobanjir/', views.infobanjir, name='infobanjir'), #Connecting the path views to the page, in this case, page2
     re_path(r"^test/", test, name="test"), #changed from re_path to this
+
 ]

@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include, re_path
+from django.contrib.staticfiles.storage import staticfiles_storage
+from django.views.generic.base import RedirectView
+from django.conf import settings
 
 urlpatterns = [
     re_path(r"^", include("home.urls")),
     path('admin/', admin.site.urls),
-    path('', include('home.urls'))
-    
-    #path('django_plotly_dash/', include('django_plotly_dash.urls'))
+    path('', include('home.urls')),
 ]
