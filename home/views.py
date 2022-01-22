@@ -17,8 +17,11 @@ from home.forms import CustomUserCreationForm # Changed user to home, as we want
 def dashboard(request):
     return render(request, "home/dashboard.html")
 
-def test(request):
-    return render(request, "home/test.html")
+def ref(request):
+    return render(request, "home/references.html")
+
+def csvfiles(request):
+    return render(request, "home/files.html")
 
 def register(request):
     if request.method == "GET":

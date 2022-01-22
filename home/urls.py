@@ -11,13 +11,13 @@ from django.contrib.staticfiles.storage import staticfiles_storage
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
-    path('', views.home, name='home'), #the authentication works, as long as there's no overlapping users
+    path('', views.home, name='home'), 
     re_path(r"^dashboard/", dashboard, name="dashboard"), #if i changed this, it'll affect the path for the views
-    re_path(r"^register/", register, name="register"), #changed from re_path to this
-    #re_path(r"^dashboard/", dashboard, name="dashboard"),
-    #path('Page2/', page2PageView.as_view(), name="Page2"),
-    path('irrigation/', views.irrigation, name="irrigation"),
-    path('infobanjir/', views.infobanjir, name='infobanjir'), #Connecting the path views to the page, in this case, page2
-    re_path(r"^test/", test, name="test"), #changed from re_path to this
+    re_path(r"^register/", register, name="register"),
+    path('irrigation/', views.irrigation, name="irrigation"),  #Connecting the path views to the page, in this case, irrigation.html
+    path('infobanjir/', views.infobanjir, name='infobanjir'),
+    path('references/', views.ref, name="references"),
+    path('files/', views.csvfiles, name="files"),
+    re_path(r"^test/", test, name="test"),
 
 ]
