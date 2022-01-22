@@ -5,19 +5,26 @@
 {% if user.is_authenticated %}
 <div>
     <!-- this is graph 1 -->
-    {{ plot1 | safe }}
-</div>  
-<div>
-    <!-- this is graph 1 -->
-    {{ plot1 | safe }}
-</div>    
-<h2>Assumptions</h2>
-<p>So assuming  n</p>
-<br>
-<div style="width:600;height:800">
-    <!-- this is graph 2 -->
-    <!-- {{ plot2 | safe }}  -->
+    <center>{{ plot1 | safe }}</center>
 </div>
+<br>
+<p style="color: black; font-size: x-large;">From the pie chart shown above, it is observed that there is high possibility that Sarawak is no longer in the raining season. Hence, majority of the areas are not at flood risk compared to the flood data shown in Department of Irrigation & Drainage Sarawak. However, there are 6 areas predominantly in Miri whereby the river level caused flooding and required the need to evacuate the villages.</p>
+<strong><p style="color: black; font-size: x-large;">Note: The data from Public Info Banjir are constantly updated on daily basis. The current data was scrapped on 21 January 2022</p></strong>
+<div>
+    <center>{{ plot2 | safe }}</center>
+
+</div>
+<br>
+<p style="color: black; font-size: x-large;">From the box plot plotted, the average water level in the normal threshold are lowered than danger threshold. It is observed that the water level in normal threshold has outliers data. This could possibly due to bigger river basin size as compared to the others</p>
+
+
+<div>
+    <center>{{ plot3 | safe }}</center>
+</div>       
+<br>
+<p style="color: black; font-size: x-large;">Floods are identified as the most devastating hazards in the world (Prăvălie and Costache, 2013; Mishra and Sinha, 2020; Sarkar and Mondal, 2020). Flood often causes severe loss of human lives and socio-economic damage (Hirabayashi et al., 2013; Costache, 2019).
+
+    According to a news article reported on 23 December 2021 by The Borneo Post, the public in Sarawak have been advised to make the necessary preparations for possible floods and landslides following worst flood events in decades caused by three days of torrential rain happened in Klang Valley and Pahang. MetMalaysia published an infographic on 22 December 2021 expecting monsoon surge to occur from 27 to 29 December 2021, with continuous rain in the western part of Sarawak and eastern Sabah during the period.</p>
 {% else %}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>

@@ -6,6 +6,7 @@ from plotly.offline import plot
 import plotly.graph_objects as go
 import plotly.express as px
 import plotly
+import matplotlib.pyplot as plt
 import pandas as pd
 from django.urls import reverse
 from home.forms import CustomUserCreationForm # Changed user to home, as we wanted this to import the CustomUserCreationForm from home
@@ -44,19 +45,30 @@ def infobanjir(request):
 
 #@login_required(login_url='/accounts/login/')
 def home(request):
-    def scatter():
-        
-        DID_December =  pd.read_csv(r"C:\Users\User\Documents\SideHustles\FSProjOne\XJ_JPNB\DID_December.csv")
+    
+    DID_December =  pd.read_csv(r"C:\Users\User\Documents\SideHustles\FSProjOne\XJ_JPNB\DID_December.csv")
+    PIB =  pd.read_csv(r"C:\Users\User\Documents\SideHustles\FSProjOne\XJ_JPNB\PIB_Sarawak River.csv")
 
+    def rivLevel():
+        frequency = [89, 6]
+        status = ['Normal', 'Danger']
+        
+        fig = px.pie(values=frequency, names=status)
+        fig.update_traces(textfont_size=12)
+        
+        plot_div = plot(fig, output_type='div', include_plotlyjs=False)
+        return plot_div
+
+    def aveFlood():
+        
         colors = plotly.colors.qualitative.Prism
 
         fig = px.bar(DID_December, DID_December['Date'], y=DID_December['Average'],
-                    color=DID_December['Average'], barmode='stack',
-                    text=DID_December['Average'].round(decimals = 3).astype(str) + 'm',  # Add m unit
-                    color_discrete_sequence=colors)
+             color=DID_December['Average'], barmode='stack',
+             text=DID_December['District'],
+             color_discrete_sequence=colors)
 
-        fig.update_layout(title = {'text': "Average Water Level of Flood Area by Dates",
-                                'x':0.5, 'xanchor': 'center'},
+        fig.update_layout(title = {'text': "Average Water Level of Flood Areas by Dates",'x':0.5, 'xanchor': 'center'},
                         title_font_size=30,
                         legend=dict(yanchor="bottom", y=0.0, 
                                     xanchor="right", x=1.2),
@@ -71,28 +83,23 @@ def home(request):
         
         plot_div = plot(fig, output_type='div', include_plotlyjs=False)
         return plot_div
+    
+    def sarawakRiver():
+        fig = px.box(data_frame = PIB,x = "Status",y = "Current Water Level",color= "Status")
 
-    def saza():
-        
-        df =  pd.read_csv(r"C:\Users\User\Documents\SideHustles\FSProjOne\ADS.csv")
+        fig.update_layout(height=600, width=600)
 
-        data = [go.Histogram(x=df['Branch'],marker=dict(color='green'))] #histogram only needs one set of data
+        fig.update_yaxes(range=[-5, 45])
 
-        layout = go.Layout(
-        hovermode='closest',
-         xaxis = {'title':'Ohoho Branch'},
-         yaxis = {'title': 'Number of Language Included'},
-        title = 'I am just testing things out'
-        )
-
-
-        fig = go.Figure(data=data,layout=layout)
         plot_div = plot(fig, output_type='div', include_plotlyjs=False)
         return plot_div
-    
+
     context ={
-        'plot1': scatter(),
-        'plot2': saza()
+        'plot1': rivLevel(),
+        'plot2': sarawakRiver(),
+        'plot3': aveFlood(),
+        # 
+        
     }
 
     return render(request, 'home/dashboard.html', context)
